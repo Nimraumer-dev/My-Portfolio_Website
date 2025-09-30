@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimra Portfolio website</title>
+    <link rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Portfolio</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="hamburger"><a href="#" onclick=showsSidebar()><i class="fas fa-bars hamicon"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <ul>
+            <li onclick=hideSidebar()><span id="close-btn"><i class="fas fa-times"></i></span></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container home-section">
+            <div class="intro hidden slide-right">
+                <h3>Hello it's me</h3>
+                <h1>Nimra Umer</h1>
+                <h2>And I'm a <span style="color: rgb(161, 80, 15); text-shadow: 0px 1px 2px black;">Front-End
+                        Developer</span></h2>
+                <p>Hi! I'm a passionate Front-End Developer dedicated to creating beautiful, functional, and
+                    user-friendly web experiences. This portfolio showcases my journey, skills, and the projects I've
+                    crafted with love and attention to detail. Explore my work and get to know the developer behind the
+                    code.</p>
+                <div class="home-bt">
+                    <a href="#" class="home-btn">Hire Me</a>
+                    <a href="#" id="btn" class="home-btn">Let's Talk</a>
+                </div>
+            </div>
+            <div class="profile-img hidden slide-left">
+                <img src="img/prof.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-section">
+            <h2 style="text-shadow:  2px 2px 8px solid #0a0a0a;">About Me</h2>
+            <hr>
+            <div class="about-content">
+                <div class="about-right hidden slide-right">
+                    <img src="img/prof.jpg" alt="">
+                </div>
+                <div class="about-left hidden slide-left">
+                    <p>
+                        "I am a passionate Frontend Developer with a strong interest in creating modern, user-friendly,
+                        and responsive websites. Skilled in HTML, CSS, and JavaScript, I enjoy turning creative ideas
+                        into interactive digital experiences. My focus is on writing <span>clean</span>, structured code
+                        and building
+                        designs that not only look good but <span>also</span> perform well across all devices. I am
+                        continuously
+                        learning and <span>improving </span>my skills to keep up with the latest trends in web
+                        development."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container skill-section">
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-grid">
+                <div class="skill-item hidden slide-bottom">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-level">Advanced - 90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%" style="width: 90% "></div>
+                    </div>
+                </div>
+                <div class="skill-item  hidden slide-bottom">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-level">Advanced - 85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item hidden slide-bottom">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Intermediate - 75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75%" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item  hidden slide-bottom">
+                    <div class="skill-header">
+                        <span class="skill-name">GitHub</span>
+                        <span class="skill-level">Intermediate - 70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="70%" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container project-section">
+            <h2>Projects</h2>
+            <hr>
+            <div class="projects-grid">
+                <div class="project-card hidden slide-right">
+                    <div class="project-img">
+                        <img src="img/project1.png" alt="" width="330px" height="200px">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce (Shopping Website)</h3>
+                        <p class="project-desc">A fully responsive shopping website featuring a clean product showcase,
+                            intuitive layout, and mobile-friendly navigation.
+                            Built with HTML, CSS, and JavaScript to deliver a smooth and engaging shopping experience.
+                        </p>
+                        <a href="https://nimraumer-dev.github.io/ClickCart-Responsive-FashionStore-Website/"
+                            class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card hidden slide-right">
+                    <div class="project-img">
+                        <img src="img/project2.png" alt="" srcset="" width="330px" height="200px">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Apexcify Technologies Website</h3>
+                        <p class="project-desc">A modern corporate website designed for Apexcify Technologies, focusing
+                            on services, solutions, and professional branding.
+                            Developed with HTML and CSS to create a sleek, user-friendly, and business-oriented
+                            interface.</p>
+                        <a href="https://nimraumer-dev.github.io/Apexcify-Technology-Website/" class="project-link">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="project-card hidden slide-right">
+                    <div class="project-img">
+                        <img src="img/project3.jpg" alt="" width="330px" height="200px">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Calculator App</h3>
+                        <p class="project-desc">A simple yet stylish Calculator App built with HTML, CSS, and
+                            JavaScript, featuring two different UI designs — one with a vibrant gradient background and
+                            another with a sleek dark theme. Both versions support basic arithmetic operations along
+                            with clear and delete functionalities, focusing on clean design and user-friendly
+                            experience..</p>
+                        <a href="https://nimraumer-dev.github.io/Calculator/" class="project-link" id="des"> View
+                            Design-1</a>
+                        <a href="https://nimraumer-dev.github.io/CalculatorDesign2/" class="project-link"
+                            id="design">View
+                            Design-2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container contact-section hidden slide-left">
+            <h2>Contact Me</h2>
+            <hr>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject"></label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nimra | Designed & Developed by Nimra</p>
+
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <a href="#home" class="back-to-top">&#8593;</a>
+    </footer>
+
+
+    <script>
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+
+                    // Animate ALL progress bars inside visible section
+                    const progressBars = entry.target.querySelectorAll('.progress');
+                    progressBars.forEach(progress => {
+                        const width = progress.getAttribute('data-width');
+                        progress.style.width = width;
+                    });
+
+                    observer.unobserve(entry.target); // Animate once per section
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+
+
+
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        // Convert nav ul into sidebar on mobile
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.add("sidebar", "show");
+        });
+
+        // Close sidebar when link is clicked
+        document.querySelectorAll("#nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("show");
+            });
+        });
+
+
+
+        function showsSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
+
+        const hamicon = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('.close');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.add('active');   // slide in
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');  // slide out
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
