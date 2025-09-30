@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fefefe;
-  
+
 }
 
 /* Navigation */
@@ -261,8 +261,9 @@ h1, h2 {
     background-image: url(img/2.png);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    min-width: 800px;
     width: 100%;
+    min-height: 400px;
+
 }
 
 .about-left p {
@@ -714,7 +715,7 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    transition: right 0.3s ease-in-out;  
+    transition: right 0.3s ease-in-out;
 }
 
 .sidebar ul li {
@@ -769,7 +770,8 @@ footer {
 
 
 .sidebar.active {
-  right: 0;   /* ✅ slide in */
+    right: 0;
+    /* ✅ slide in */
 }
 
 
@@ -882,13 +884,20 @@ footer {
 
     .about-left {
         min-width: 100%;
-        margin-top: 2rem;
+        margin-top: 6rem;
         text-align: center;
     }
 
     .about-left p {
         text-align: center;
+        margin-bottom: 2rem;
     }
+
+    .about-left {
+        min-width: 100%;
+    
+    }
+
 
     /* Skills */
     .skill-item {
@@ -922,8 +931,8 @@ footer {
 
 
 @media (max-width: 400px) {
-  .home-section h1 {
-    font-size: 3rem;  
-    line-height: 1.2;
-  }
+    .home-section h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
 }
